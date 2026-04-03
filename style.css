@@ -129,6 +129,11 @@ body {
 .nav-links a:hover { color: var(--text); }
 .nav-links a:hover::after { width: 100%; }
 
+.whatsapp-icon {
+    display: flex;
+    align-items: center;
+}
+
 .nav-cta {
     display: flex;
     align-items: center;
