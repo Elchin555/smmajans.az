@@ -160,6 +160,8 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    position: relative;
+    z-index: 10000;
     padding: 4px;
 }
 
@@ -973,20 +975,21 @@ body {
     .nav-links {
         display: none;
         position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(10, 10, 15, 0.98);
-        backdrop-filter: blur(20px);
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #0a0a0f;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 28px;
-        z-index: 998;
+        z-index: 9999;
+        list-style: none;
     }
 
-    .nav-links.active { display: flex; }
+    .nav-links.active {
+        display: flex;
+    }
 
     .nav-links a {
         font-size: 1.3rem;
