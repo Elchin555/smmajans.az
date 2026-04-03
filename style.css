@@ -427,6 +427,7 @@ body {
     gap: 32px;
     animation: marquee 30s linear infinite;
     white-space: nowrap;
+    will-change: transform;
 }
 
 .marquee-content span {

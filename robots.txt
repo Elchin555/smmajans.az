@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smmajans.az/sitemap.xml
